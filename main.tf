@@ -14,7 +14,7 @@ provider "github" {
 
 resource "github_repository" "gh_repo" {
   name       = var.waypoint_application
-  visibility = "public"
+  visibility = "private"
 
   template {
     owner                = var.template_org
